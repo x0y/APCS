@@ -7,12 +7,12 @@ import java.util.Scanner;
     System.out.println("Welcome to the Automatic Change Calculator. What change are you left with? Please input your answer in cents");
     Scanner keyboard = new Scanner(System.in);
     int userinput = keyboard.nextInt();
-    int dollaramount = userinput / 100; // Yields 1 dollar
-    int dollaramountremainder = userinput % 100; //Yields 63 cents left over
-    int quarteramount = dollaramountremainder / 25; // Yields 63/25 = 2
-    int quarteramountremainder = dollaramountremainder % 25; // Yields 13 cents left over
-    int dimeamount = quarteramountremainder / 10; // Yields 1 dime
-    int dimeamountremainder = quarteramountremainder % 10; // Yields 3 cents
+    int dollaramount = userinput / 100;
+    int dollaramountremainder = userinput % 100;
+    int quarteramount = dollaramountremainder / 25;
+    int quarteramountremainder = dollaramountremainder % 25;
+    int dimeamount = quarteramountremainder / 10;
+    int dimeamountremainder = quarteramountremainder % 10;
     
     if (dimeamountremainder <= 4) 
         {
